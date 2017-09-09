@@ -1,6 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/Vagr9K/gatsby-material-starter/badges/gpa.svg)](https://codeclimate.com/github/Vagr9K/gatsby-material-starter)
 [![Issue Count](https://codeclimate.com/github/Vagr9K/gatsby-material-starter/badges/issue_count.svg)](https://codeclimate.com/github/Vagr9K/gatsby-material-starter)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/990fb54ea8094f2aa0ed77f14e859820)](https://www.codacy.com/app/Vagr9K/gatsby-material-starter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Vagr9K/gatsby-material-starter&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/990fb54ea8094f2aa0ed77f14e859820)](https://www.codacy.com/app/Vagr9K/gatsby-material-starter?utm_source=github.com&amputm_medium=referral&amputm_content=Vagr9K/gatsby-material-starter&amputm_campaign=Badge_Grade)
 <div align="center">
     <img src="docs/logo.png" alt="Logo" width='200px' height='200px'/>
 </div>
@@ -148,7 +148,7 @@ module.exports = {
   ],
   copyright: 'Copyright © 2017. Material User', // Copyright string for the footer of the website and RSS feed.
 
-};
+}
  ```
 
  You can also optionally set `pathPrefix`:
@@ -170,8 +170,8 @@ Edit `src/layouts/theme.scss` to suit your needs.
 You can use [Material color palette](https://react-md.mlaursen.com/customization/colors) provided by React-MD.
 
 ```css
-@import '~react-md/src/scss/react-md';
-$md-primary-color: $md-grey-400;
-$md-secondary-color: $md-red-800;
-$md-tertiary-color: $md-grey-300;
+@import '~react-md/src/scss/react-md'
+$md-primary-color: $md-grey-400
+$md-secondary-color: $md-red-800
+$md-tertiary-color: $md-grey-300
 ```

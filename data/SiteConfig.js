@@ -28,10 +28,10 @@ module.exports = {
       iconClassName: "fa fa-twitter"
     },
     {
-      label: "Email",
-      url: "mailto:jytiens@mtlgreen.com",
-      iconClassName: "fa fa-envelope"
+      label: "Facebook",
+      url: "https://facebook.com/MtlGreen",
+      iconClassName: "fa fa-facebook"
     }
   ],
   copyright: "No rights reserved, do as you please"
-};
+}

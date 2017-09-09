@@ -1,6 +1,6 @@
-import React from "react";
-import FontIcon from "react-md/lib/FontIcons";
-import Link from "gatsby-link";
+import React from "react"
+import FontIcon from "react-md/lib/FontIcons"
+import Link from "gatsby-link"
 
 function GetNavList(config) {
   const NavList = [
@@ -13,7 +13,7 @@ function GetNavList(config) {
     {
       divider: true
     }
-  ];
+  ]
 
   if (config.userLinks) {
     config.userLinks.forEach(link => {
@@ -22,18 +22,18 @@ function GetNavList(config) {
         leftIcon: <FontIcon forceSize iconClassName={link.iconClassName} />,
         component: "a",
         href: link.url
-      });
-    });
+      })
+    })
   }
 
-  NavList.push({ divider: true });
+  NavList.push({ divider: true })
 
   NavList.push({
     primaryText: "About",
     leftIcon: <FontIcon>person</FontIcon>,
     component: Link,
     to: "/about/"
-  });
-  return NavList;
+  })
+  return NavList
 }
-export default GetNavList;
+export default GetNavList

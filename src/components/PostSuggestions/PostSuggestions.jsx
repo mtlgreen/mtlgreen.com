@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import FontIcon from "react-md/lib/FontIcons";
-import Link from "gatsby-link";
-import "./PostSuggestions.scss";
+import React, { Component } from "react"
+import FontIcon from "react-md/lib/FontIcons"
+import Link from "gatsby-link"
+import "./PostSuggestions.scss"
 
 export default class PostSuggestions extends Component {
   render() {
-    const { postNode } = this.props;
-    const postFields = postNode.fields;
+    const { postNode } = this.props
+    const postFields = postNode.fields
     return (
       <div className="post-suggestions md-grid md-cell--12">
         <Link to={postFields.prevSlug} className="post-suggestion">
@@ -40,6 +40,6 @@ export default class PostSuggestions extends Component {
           </FontIcon>
         </Link>
       </div>
-    );
+    )
   }
 }

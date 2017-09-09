@@ -1,9 +1,9 @@
-import React from "react";
-import PostPreview from "../PostPreview/PostPreview";
+import React from "react"
+import PostPreview from "../PostPreview/PostPreview"
 
 class PostListing extends React.Component {
   getPostList() {
-    const postList = [];
+    const postList = []
     this.props.postEdges.forEach(postEdge => {
       postList.push({
         path: postEdge.node.fields.slug,
@@ -13,12 +13,12 @@ class PostListing extends React.Component {
         date: postEdge.node.frontmatter.date,
         excerpt: postEdge.node.excerpt,
         timeToRead: postEdge.node.timeToRead
-      });
-    });
-    return postList;
+      })
+    })
+    return postList
   }
   render() {
-    const postList = this.getPostList();
+    const postList = this.getPostList()
     return (
       <div className="md-grid md-grid--no-spacing md-cell--middle">
         <div className="md-grid md-cell--8 mobile-fix">
@@ -27,8 +27,8 @@ class PostListing extends React.Component {
           )}
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default PostListing;
+export default PostListing

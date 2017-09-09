@@ -1,15 +1,15 @@
-import React, { Component } from "react";
-import CardTitle from "react-md/lib/Cards/CardTitle";
-import Avatar from "react-md/lib/Avatars";
-import FontIcon from "react-md/lib/FontIcons";
-import Link from "gatsby-link";
-import _ from "lodash";
-import "./PostInfo.scss";
+import React, { Component } from "react"
+import CardTitle from "react-md/lib/Cards/CardTitle"
+import Avatar from "react-md/lib/Avatars"
+import FontIcon from "react-md/lib/FontIcons"
+import Link from "gatsby-link"
+import _ from "lodash"
+import "./PostInfo.scss"
 
 class PostInfo extends Component {
   render() {
-    const { postNode } = this.props;
-    const post = postNode.frontmatter;
+    const { postNode } = this.props
+    const post = postNode.frontmatter
     return (
       <div className="post-info">
         <CardTitle
@@ -30,8 +30,8 @@ class PostInfo extends Component {
           />
         </Link>
       </div>
-    );
+    )
   }
 }
 
-export default PostInfo;
+export default PostInfo

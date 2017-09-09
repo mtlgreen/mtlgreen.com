@@ -204,7 +204,7 @@ Reference-style:
 
 ## Code and Syntax Highlighting
 
-Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers); to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
+Code blocks are part of the Markdown spec, but syntax highlighting isn't. However, many renderers -- like Github's and *Markdown Here* -- support syntax highlighting. *Markdown Here* supports highlighting for dozens of languages (and not-really-languages, like diffs and HTTP headers) to see the complete list, and how to write the language names, see the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
 ```no-highlight
 Inline `code` has `back-ticks around` it.
@@ -215,8 +215,8 @@ Inline `code` has `back-ticks around` it.
 Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
 <pre lang="no-highlight"><code>```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+var s = "JavaScript syntax highlighting"
+alert(s)
 ```
 
 ```python
@@ -226,15 +226,15 @@ print s
 
 ```
 No language indicated, so no syntax highlighting.
-But let's throw in a &lt;b&gt;tag&lt;/b&gt;.
+But let's throw in a &ltb&gttag&lt/b&gt.
 ```
 </code></pre>
 
 
 
 ```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+var s = "JavaScript syntax highlighting"
+alert(s)
 ```
 
 ```python
@@ -369,7 +369,7 @@ Underscores
 
 ## Line Breaks
 
-My basic recommendation for learning how line breaks work is to experiment and discover -- hit &lt;Enter&gt; once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
+My basic recommendation for learning how line breaks work is to experiment and discover -- hit &ltEnter&gt once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
 
 Here are some things to try out:
 
