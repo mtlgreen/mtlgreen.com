@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './CommonPageHeadTitle.scss'
+import './commonPageHeadTitle.scss'
 
 class CommonPageHeadTitle extends Component {
   render() {

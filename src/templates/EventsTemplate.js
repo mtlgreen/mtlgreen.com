@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import CommonPageHeadTitle from '../components/CommonPageHeadTitle/CommonPageHeadTitle'
 import Img from 'gatsby-image'
 
-import './EventsTemplate.scss'
+import './eventsTemplate.scss'
 
 class EventsTemplate extends Component {
   render() {
