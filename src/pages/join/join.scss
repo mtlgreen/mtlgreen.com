@@ -1,0 +1,6 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.join-page__body__container {
+  @include standard-page__body__container();
+}

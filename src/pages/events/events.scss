@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.events-page__body__container {
+  @include standard-page__body__container();
+}
+
+.events-page__intro-informtaion__outer-container {
+  padding: 0px 20px 0px 20px;
+}
+
+.events-page__intro-informtaion__inner-container {
+  @include standard-page__intro-information__container();
+}
+
+.events-page__events-card-section__container {
+  width: 100%;
+  padding: 30px 0px 50px 0px;
+}

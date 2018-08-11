@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.common-page__head-title__container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  $parameters: (
+    'backgroundColor': $color-bright-aqua,
+    'topAngle': 1.5deg,
+    'bottomAngle': 1.8deg,
+    'transformOriginTop': 0 100%,
+    'transformOriginBottom': 0 100%,
+    'verticalPadding': 5%,
+    'horizontalPadding': 50px,
+    'textAlign': 'center',
+  );
+  @include angle-divider($parameters...);
+  .common-page__head-title__intro-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+  }
+}

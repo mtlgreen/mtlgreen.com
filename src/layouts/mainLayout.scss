@@ -1,0 +1,28 @@
+@import '../styles/variables.scss';
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-base;
+  font-weight: 100;
+}
+
+.main-layout__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960;
+  padding-top: 0;
+}

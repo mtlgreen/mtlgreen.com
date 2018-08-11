@@ -1,0 +1,21 @@
+@import '../styles/variables.scss';
+
+.events-template__body__container {
+  position: absolute;
+  top: 80px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border-top: 3px solid $color-bright-aqua;
+}
+
+.events-template__head__image {
+  width: 50%;
+}
+
+.events-template__article-excerpt__container {
+  max-width: 700px;
+}

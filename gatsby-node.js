@@ -1,154 +1,140 @@
-const path = require("path")
-const _ = require("lodash")
-const webpackLodashPlugin = require("lodash-webpack-plugin")
+const path = require(`path`)
 
-const postNodes = []
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
-function addSibilingNodes(boundActionCreators) {
+exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
-  for (let i = 0 i < postNodes.length i += 1) {
-    const nextID = i + 1 < postNodes.length ? i + 1 : 0
-    const prevID = i - 1 > 0 ? i - 1 : postNodes.length - 1
-    const currNode = postNodes[i]
-    const nextNode = postNodes[nextID]
-    const prevNode = postNodes[prevID]
-    createNodeField({
-      node: currNode,
-      name: "nextTitle",
-      value: nextNode.frontmatter.title
+  if (node.internal.type === `MarkdownRemark`) {
+    const greenThoughtsSlug = createFilePath({
+      node,
+      getNode,
+      basePath: `green-thoughts`,
     })
+
     createNodeField({
-      node: currNode,
-      name: "nextSlug",
-      value: nextNode.fields.slug
-    })
-    createNodeField({
-      node: currNode,
-      name: "prevTitle",
-      value: prevNode.frontmatter.title
-    })
-    createNodeField({
-      node: currNode,
-      name: "prevSlug",
-      value: prevNode.fields.slug
+      node,
+      name: `slug`,
+      value: greenThoughtsSlug,
     })
   }
-}
-
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators
-  let slug
-  if (node.internal.type === "MarkdownRemark") {
-    const fileNode = getNode(node.parent)
-    const parsedFilePath = path.parse(fileNode.relativePath)
-    if (
-      Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, "slug")
-    ) {
-      slug = `/${_.kebabCase(node.frontmatter.slug)}`
-    }
-    if (
-      Object.prototype.hasOwnProperty.call(node, "frontmatter") &&
-      Object.prototype.hasOwnProperty.call(node.frontmatter, "title")
-    ) {
-      slug = `/${_.kebabCase(node.frontmatter.title)}`
-    } else if (parsedFilePath.name !== "index" && parsedFilePath.dir !== "") {
-      slug = `/${parsedFilePath.dir}/${parsedFilePath.name}/`
-    } else if (parsedFilePath.dir === "") {
-      slug = `/${parsedFilePath.name}/`
-    } else {
-      slug = `/${parsedFilePath.dir}/`
-    }
-    createNodeField({ node, name: "slug", value: slug })
-    postNodes.push(node)
-  }
-
-  addSibilingNodes(boundActionCreators)
 }
 
 exports.createPages = ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators
-
   return new Promise((resolve, reject) => {
-    const postPage = path.resolve("src/templates/post.jsx")
-    const tagPage = path.resolve("src/templates/tag.jsx")
-    const categoryPage = path.resolve("src/templates/category.jsx")
-    resolve(
-      graphql(
-        `
-        {
-          allMarkdownRemark {
-            edges {
-              node {
-                frontmatter {
-                  tags
-                  category
-                }
-                fields {
-                  slug
-                }
+    graphql(`
+      {
+        allMarkdownRemark {
+          edges {
+            node {
+              fields {
+                slug
               }
             }
           }
         }
-      `
-      ).then(result => {
-        if (result.errors) {
-          /* eslint no-console: "off"*/
-          console.log(result.errors)
-          reject(result.errors)
+      }
+    `).then(result => {
+      result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+        if (node.fields.slug.includes('pages/events')) {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve(`./src/templates/EventsTemplate.js`),
+            context: {
+              slug: node.fields.slug,
+            },
+          })
+        } else if (node.fields.slug.includes('pages/green-thoughts')) {
+          createPage({
+            path: node.fields.slug,
+            component: path.resolve(`./src/templates/GreenThoughtsTemplate.js`),
+            context: {
+              slug: node.fields.slug,
+            },
+          })
         }
-
-        const tagSet = new Set()
-        const categorySet = new Set()
-        result.data.allMarkdownRemark.edges.forEach(edge => {
-          if (edge.node.frontmatter.tags) {
-            edge.node.frontmatter.tags.forEach(tag => {
-              tagSet.add(tag)
-            })
-          }
-
-          if (edge.node.frontmatter.category) {
-            categorySet.add(edge.node.frontmatter.category)
-          }
-
-          createPage({
-            path: edge.node.fields.slug,
-            component: postPage,
-            context: {
-              slug: edge.node.fields.slug
-            }
-          })
-        })
-
-        const tagList = Array.from(tagSet)
-        tagList.forEach(tag => {
-          createPage({
-            path: `/tags/${_.kebabCase(tag)}/`,
-            component: tagPage,
-            context: {
-              tag
-            }
-          })
-        })
-
-        const categoryList = Array.from(categorySet)
-        categoryList.forEach(category => {
-          createPage({
-            path: `/categories/${_.kebabCase(category)}/`,
-            component: categoryPage,
-            context: {
-              category
-            }
-          })
-        })
       })
-    )
+      resolve()
+    })
   })
 }
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
-  if (stage === "build-javascript") {
-    config.plugin("Lodash", webpackLodashPlugin, null)
-  }
-}
+// const path = require(`path`)
+
+// const { createFilePath } = require(`gatsby-source-filesystem`)
+
+// exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
+//   const { createNodeField } = boundActionCreators
+//   if (node.internal.type === `MarkdownRemark`) {
+//     // const fileNode = getNode(node.parent)
+//     // console.log(`\n`, fileNode.relativePath)
+
+//     const slug = createFilePath({
+//       node,
+//       getNode,
+//       basePath: `green-thoughts`,
+//     })
+
+//     createNodeField({
+//       node,
+//       name: `slug`,
+//       value: slug,
+//     })
+
+//     // const eventsSlug = createFilePath({
+//     //   node,
+//     //   getNode,
+//     //   basePath: `events`,
+//     // })
+
+//     // createNodeField({
+//     //   node,
+//     //   name: `eventsSlug`,
+//     //   value: eventsSlug,
+//     // })
+//   }
+// }
+
+// exports.createPages = ({ graphql, boundActionCreators }) => {
+//   const { createPage } = boundActionCreators
+//   return new Promise((resolve, reject) => {
+//     graphql(`
+//       {
+//         allMarkdownRemark {
+//           edges {
+//             node {
+//               fields {
+//                 slug
+//               }
+//             }
+//           }
+//         }
+//       }
+//     `).then(result => {
+//       result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+//         console.log('OUTPOUT PATH ', node)
+//         // if (node.fields.greenThoughtsSlug.includes('green-thoughts')) {
+//         console.log('Creating green t page ', node.fields.slug)
+//         createPage({
+//           path: node.fields.slug,
+//           component: path.resolve(`./src/templates/GreenThoughtsTemplate.js`),
+//           context: {
+//             slug: node.fields.slug,
+//           },
+//         })
+//         // }
+//         // if (node.fields.eventsSlug.includes('pages/events')) {
+//         //   console.log('Creating event page ', node.fields.eventsSlug)
+//         //   createPage({
+//         //     path: node.fields.eventsSlug,
+//         //     component: path.resolve(`./src/templates/EventsTemplate.js`),
+//         //     context: {
+//         //       slug: node.fields.eventsSlug,
+//         //     },
+//         //   })
+//         // }
+//       })
+//       resolve()
+//     })
+//   })
+// }
