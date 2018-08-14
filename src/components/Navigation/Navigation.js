@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
-import './navigation.scss'
+import './Navigation.scss'
 
 class Navigation extends Component {
   render() {
