@@ -1,12 +1,12 @@
 ---
-date: "2018-07-21"
-title: "Green Film"
-thumbnail: "./green-film-keagan-henman-thumbnail.jpg"
-images: 
-    # - ./images/lakeside-yanapi-senaud.jpg
-    # - ./images/film-cameras-lawn-jakob-owens.jpg
-    # - ./images/green-film-keagan-henman.jpg
-shortDescription: "How can film artists interested in sustainability make a green impact?"
+date: '2017-07-21'
+title: 'Green Film Mauris justo odio, cursus ac scelerisque eu, malesuada sit amet libero. '
+thumbnail: './green-film-keagan-henman-thumbnail.jpg'
+images:
+  # - ./images/lakeside-yanapi-senaud.jpg
+  # - ./images/film-cameras-lawn-jakob-owens.jpg
+  # - ./images/green-film-keagan-henman.jpg
+shortDescription: 'How can film artists interested in sustainability make a green impact? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris justo odio, cursus ac scelerisque eu, malesuada sit amet libero. Sed eget risus sed nibh faucibus ornare aliquam quis nisi. Etiam eleifend consequat posuere. Donec et faucibus tellus. Maecenas molestie laoreet ante quis vehicula. Phasellus in tortor vitae orci dictum suscipit. Nullam sed nunc dictum, eleifend massa nec, efficitur dolor. Pellentesque ac dignissim elit.'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris justo odio, cursus ac scelerisque eu, malesuada sit amet libero. Sed eget risus sed nibh faucibus ornare aliquam quis nisi. Etiam eleifend consequat posuere. Donec et faucibus tellus. Maecenas molestie laoreet ante quis vehicula. Phasellus in tortor vitae orci dictum suscipit. Nullam sed nunc dictum, eleifend massa nec, efficitur dolor. Pellentesque ac dignissim elit.

@@ -53,7 +53,7 @@ export const greenThoughtsTemplateQuery = graphql`
         # }
         thumbnail {
           childImageSharp {
-            sizes(maxWidth: 400) {
+            sizes(maxWidth: 1200) {
               ...GatsbyImageSharpSizes
             }
           }

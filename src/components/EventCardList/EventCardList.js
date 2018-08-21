@@ -10,7 +10,9 @@ class EventCardList extends Component {
         thumbnail={node.frontmatter.thumbnail.childImageSharp.sizes}
         title={node.frontmatter.title}
         slug={node.fields.slug}
+        date={node.frontmatter.date}
         shortDescription={node.frontmatter.shortDescription}
+        screenWidth={this.props.screenWidth}
       />
     )
   }
