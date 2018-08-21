@@ -48,8 +48,9 @@
   margin: 150px 100px 50px 100px;
   display: flex;
   flex-direction: column;
-  @media (max-width: 500px) {
-    margin: 150px 20px 50px 20px;
+  align-items: center;
+  @media (max-width: $bp-large) {
+    margin: 150px 0px 50px 0px;
   }
 }
 
@@ -73,8 +74,7 @@
     'textAlign': 'center',
   );
   @include angle-divider($parameters...);
-  // color: black;
-  border-bottom: 7px solid $color-bright-green;
+  border-bottom: 3px solid $color-bright-aqua;
   font-size: 18px;
   line-height: 45px;
 }
@@ -96,4 +96,38 @@
   border: 3px solid $color-bright-aqua;
   z-index: -1;
   line-height: 35px;
+}
+
+@mixin standard-page__multiline-truncation($lineHeight: 25px, $lineCount: 3) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lineCount;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@mixin image-card__vertical__container {
+  width: 96%;
+  height: auto;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  -o-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: 0 2% 30px 2%;
+  cursor: pointer;
+
+  &:hover {
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.19),
+      0 12px 12px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.19), 0 12px 12px rgba(0, 0, 0, 0.23);
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+  }
 }

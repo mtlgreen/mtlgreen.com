@@ -14,13 +14,11 @@ class GreenThoughtsPage extends Component {
           titleText={'Maybe some food for green thoughts?'}
         />
         <div className="green-thoughts-page__body__container">
-          <div className="green-thoughts-page__intro-informtaion__outer-container">
-            <div className="green-thoughts-page__intro-informtaion__inner-container">
-              Feed your passion by exploring our vibrant and growing collection
-              of posts exposing what, where, who and how sustainable impact is
-              being made today. Further than this, discover how you can act as a
-              post contributor to further amplify our collective message.
-            </div>
+          <div className="green-thoughts-page__intro-informtaion__container">
+            Feed your passion by exploring our vibrant and growing collection of
+            posts exposing what, where, who and how sustainable impact is being
+            made today. Further than this, discover how you can act as a post
+            contributor to further amplify our collective message.
           </div>
           <div className="green-thoughts-page__card-section__container">
             <ImageCardGrid dataArray={allGreenThoughtsPages} />

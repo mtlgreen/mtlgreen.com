@@ -19,7 +19,6 @@ class ImageCard extends Component {
 
             <div className="image-card__text">
               <div className="image-card__text__title">{this.props.title}</div>
-              <hr className="image-card__horizontal-rule" />
               <div className="image-card__text__description">
                 {this.props.shortDescription}
               </div>
