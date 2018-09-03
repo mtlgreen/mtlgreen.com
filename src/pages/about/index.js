@@ -24,7 +24,21 @@ class AboutPage extends Component {
             </div>
           </section>
           {/* MAIN ACTIVITIES Background */}
-          <section className="about-page__section about-page__section-parallax about-page__main-activities__background" />
+          <section className="about-page__section about-page__section-parallax about-page__main-activities__background">
+            <div className="about-page__quote__container">
+              <div>
+                <span className="about-page__quote__quotation-mark">
+                  " &nbsp;
+                </span>
+                Sustainability is no longer about doing less harm. It's about
+                doing more good.
+                <span className="about-page__quote__quotation-mark">
+                  &nbsp; "
+                </span>
+              </div>
+              <div className="about-page__quote__author">- Jochen Zeitz</div>
+            </div>
+          </section>
           {/* MAIN ACTIVITIES Text */}
           <section className="about-page__section about-page__section-static">
             <div className="about-page__main-activities__container">
@@ -37,18 +51,45 @@ class AboutPage extends Component {
             </div>
           </section>
           {/* OBJECTIVES Background */}
-          <section className="about-page__section about-page__section-parallax about-page__objectives__background" />
-          {/* OBJECTIVES Text */}
+          <section className="about-page__section about-page__section-parallax about-page__history__background">
+            <div className="about-page__quote__container">
+              <div>
+                <span className="about-page__quote__quotation-mark">
+                  " &nbsp;
+                </span>
+                Alone we can do so little; together we can do so much.
+                <span className="about-page__quote__quotation-mark">
+                  &nbsp; "
+                </span>
+              </div>
+              <div className="about-page__quote__author">- Helen Keller</div>
+            </div>
+          </section>
+          {/* HISTORY Text */}
           <section className="about-page__section about-page__section-static">
-            <div className="about-page__objectives__container">
-              <div className="about-page__objectives__title">Objectives</div>
-              <div className="about-page__objectives__text">
-                {aboutContent.objectivesText}
+            <div className="about-page__history__container">
+              <div className="about-page__history__title">History</div>
+              <div className="about-page__history__text">
+                {aboutContent.historyText}
               </div>
             </div>
           </section>
           {/* TEAM Background */}
-          <section className="about-page__section about-page__section-parallax about-page__team__background" />
+          <section className="about-page__section about-page__section-parallax about-page__team__background">
+            <div className="about-page__quote__container">
+              <div>
+                <span className="about-page__quote__quotation-mark">
+                  " &nbsp;
+                </span>
+                Find a group of people who challenge and inspire you, spend a
+                lot of time with them, and it will change your life.
+                <span className="about-page__quote__quotation-mark">
+                  &nbsp; "
+                </span>
+              </div>
+              <div className="about-page__quote__author">- Amy Poehler</div>
+            </div>
+          </section>
           {/* TEAM Text */}
           <section className="about-page__section about-page__section-static">
             <div className="about-page__team__container">
