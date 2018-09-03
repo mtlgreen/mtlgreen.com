@@ -8,8 +8,8 @@ class AboutPage extends Component {
   render() {
     return (
       <div>
-        <CommonPageHeadTitle titleText={'What are we all about?'} />
         <div className="about-page__body__container">
+          <CommonPageHeadTitle titleText={'What are we all about?'} />
           {/* MISSION VISION Background */}
           <section className="about-page__section about-page__section-parallax about-page__mission-vision__background" />
           {/* MISSION VISION Text */}
