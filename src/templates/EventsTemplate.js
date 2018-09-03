@@ -5,7 +5,6 @@ import Img from 'gatsby-image'
 import getFormattedDate from '../utils/getFormattedDate'
 import Icon from '@mdi/react'
 import { mdiCalendar, mdiCity, mdiEventbrite, mdiFacebookBox } from '@mdi/js'
-import Link from 'gatsby-link'
 import ImageCardGrid from '../components/ImageCardGrid/ImageCardGrid'
 
 import './eventsTemplate.scss'

@@ -17,7 +17,10 @@ class HeaderMenu extends Component {
           <div>Green Thoughts</div>
         </Link>
         <Link to="/join/" className="header-menu__item">
-          <div>Join</div>
+          <div>Get Involved</div>
+        </Link>
+        <Link to="/contact/" className="header-menu__item">
+          <div>Contact</div>
         </Link>
       </div>
     )
