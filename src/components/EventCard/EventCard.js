@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import EventCardLarge from './EventCardLarge'
 import EventCardSmall from './EventCardSmall'
-import getFormattedDate from './getFormattedDate'
+import getFormattedDate from '../../utils/getFormattedDate'
 
 class EventCard extends Component {
   constructor() {

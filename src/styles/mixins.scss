@@ -131,3 +131,54 @@
     transform: scale(1.05);
   }
 }
+
+@mixin standard-page__zigzag(
+  $height: 10px,
+  $halfheight: (
+    $height/2,
+  ),
+  $thickness: 110%,
+  $offset: 0px,
+  $backgroundcolor: #fff,
+  $linecolor: $color-bright-aqua
+) {
+  margin: 5% 0;
+  background: $backgroundcolor;
+  position: relative;
+  height: $height;
+  z-index: 1;
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &:before {
+    height: ($height - $offset);
+    top: $thickness;
+    background: linear-gradient(-135deg, $linecolor $halfheight, transparent 0)
+        0 $halfheight,
+      linear-gradient(135deg, $linecolor $halfheight, transparent 0) 0
+        $halfheight;
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: $height $height;
+  }
+  &:after {
+    height: $height;
+    top: 100%;
+    background: linear-gradient(
+          -135deg,
+          $backgroundcolor $halfheight,
+          transparent 0
+        )
+        0 $halfheight,
+      linear-gradient(135deg, $backgroundcolor $halfheight, transparent 0) 0
+        $halfheight;
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: $height $height;
+  }
+}
