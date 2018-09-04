@@ -60,6 +60,10 @@
   padding: 50px 30px 50px 0px;
   font-size: 35px;
   color: $color-rosy-red;
+  @media (max-width: $bp-large) {
+    font-size: 25px;
+    padding: 10px;
+  }
 }
 
 @mixin standard-page__intro-information__container {
@@ -96,6 +100,11 @@
   border: 3px solid $color-bright-aqua;
   z-index: -1;
   line-height: 35px;
+  @media (max-width: $bp-large) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 25px;
+  }
 }
 
 @mixin standard-page__multiline-truncation($lineHeight: 25px, $lineCount: 3) {
