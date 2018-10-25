@@ -1,6 +1,44 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-.contact-page__body__container {
-  @include standard-page__body__container();
+.contact-page {
+  &__body__container {
+    @include standard-page__body__container();
+  }
+  @media (max-width: $bp-large) {
+    &__body__container {
+      padding: 0px 20px 0px 20px;
+    }
+  }
+
+  &__icons__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background-color: $color-light-aqua;
+    border-radius: 50%;
+    &:hover {
+      background-color: $color-bright-aqua;
+    }
+  }
+
+  &__text {
+    line-height: 34px;
+    font-size: 22px;
+  }
 }

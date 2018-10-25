@@ -1,12 +1,25 @@
 ---
-date: "2018-07-21"
-title: "Green Film"
-thumbnail: "./green-film-keagan-henman-thumbnail.jpg"
-images: 
-    # - ./images/lakeside-yanapi-senaud.jpg
-    # - ./images/film-cameras-lawn-jakob-owens.jpg
-    # - ./images/green-film-keagan-henman.jpg
-shortDescription: "How can film artists interested in sustainability make a green impact?"
+date: '2017-07-21'
+startTime: '0001-01-01 19:30:00'
+endTime: '0001-01-01 21:30:00'
+title: 'Green Film Mauris justo odio, cursus ac scelerisque eu, malesuada sit amet libero. '
+thumbnail: './green-film-keagan-henman-thumbnail.jpg'
+images:
+  - ../../../img/home-page-images/bike-path-lexi-ruskell.jpg
+  - ../../../img/home-page-images/collaboration-rawpixel.jpg
+  - ../../../img/home-page-images/potted-plants-markus-spiske.jpg
+  - ../../../img/home-page-images/windows-nick-hillier.jpg
+  - ../../../img/home-page-images/bike-path-lexi-ruskell.jpg
+  - ../../../img/home-page-images/collaboration-rawpixel.jpg
+  - ../../../img/home-page-images/potted-plants-markus-spiske.jpg
+  - ../../../img/home-page-images/windows-nick-hillier.jpg
+addressDetailLevel: '7845 Rue Notre Dame O'
+addressCityLevel: 'Montreal, QC'
+addressPostalCode: 'T3R 9O3'
+price: '20'
+linkEventbrite: 'https://www.eventbrite.com/e/billets-la-grande-dictee-spectacle-contes-et-legendes-de-lile-de-la-reunion-49646287382?aff=ehomecard'
+linkFacebook: 'https://www.facebook.com/MtlGreen/'
+shortDescription: 'How can film artists interested in sustainability make a green impact? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris justo odio, cursus ac scelerisque eu, malesuada sit amet libero. Sed eget risus sed nibh faucibus ornare aliquam quis nisi. Etiam eleifend consequat posuere. Donec et faucibus tellus. Maecenas molestie laoreet ante quis vehicula. Phasellus in tortor vitae orci dictum suscipit. Nullam sed nunc dictum, eleifend massa nec, efficitur dolor. Pellentesque ac dignissim elit.'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris justo odio, cursus ac scelerisque eu, malesuada sit amet libero. Sed eget risus sed nibh faucibus ornare aliquam quis nisi. Etiam eleifend consequat posuere. Donec et faucibus tellus. Maecenas molestie laoreet ante quis vehicula. Phasellus in tortor vitae orci dictum suscipit. Nullam sed nunc dictum, eleifend massa nec, efficitur dolor. Pellentesque ac dignissim elit.

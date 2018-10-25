@@ -23,7 +23,8 @@ class Navigation extends Component {
         <NavItem to="/about/" title="About" />
         <NavItem to="/events/" title="Events" />
         <NavItem to="/green-thoughts/" title="Green Thoughts" />
-        <NavItem to="/join/" title="Join" />
+        <NavItem to="/join/" title="Get Involved" />
+        <NavItem to="/contact/" title="Contact" />
       </div>
     )
   }

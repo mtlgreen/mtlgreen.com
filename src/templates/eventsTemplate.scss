@@ -1,21 +1,136 @@
 @import '../styles/variables.scss';
+@import '../styles/mixins.scss';
 
-.events-template__body__container {
-  position: absolute;
-  top: 80px;
-  background-color: #fff;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
-  border-top: 3px solid $color-bright-aqua;
-}
+.events-template {
+  &__container {
+    position: absolute;
+    top: 80px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 50px 50px 50px;
+  }
 
-.events-template__head__image {
-  width: 50%;
-}
+  &__head__image {
+    width: 50%;
+  }
 
-.events-template__article-excerpt__container {
-  max-width: 700px;
+  &__body {
+    margin-top: 30px;
+    max-width: 700px;
+
+    &__info-essentials-group {
+      margin: 0px 0px 20px 0px;
+    }
+
+    @media (min-width: $bp-small) {
+      &__info-essentials-group {
+        float: left;
+        margin: 0px 30px 20px 0px;
+      }
+    }
+
+    &__info-essentials {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 16px;
+      padding: 20px 20px 0px 0px;
+      color: $color-deep-brown;
+    }
+
+    &__info-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    &__info-icon {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0px 20px 0px 0px;
+    }
+
+    &__info-text {
+    }
+
+    &__info-button {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      margin: 5px 0px 5px 0px;
+      width: 100%;
+      height: 50px;
+      background-color: $color-light-aqua;
+      border-radius: 10px;
+      font-size: 18px;
+      font-weight: 330;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        background-color: $color-bright-aqua;
+        color: $color-deep-brown;
+      }
+    }
+
+    &__info-button__icon {
+      padding: 5px 10px 0px 0px;
+    }
+
+    &__info-button__link {
+      text-decoration: none;
+      width: 100%;
+    }
+
+    &__date {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+
+    &__time {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__address-details {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 10px;
+    }
+
+    &__address {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__price {
+      display: flex;
+      border-top: 1px solid $color-bright-aqua;
+      border-bottom: 1px solid $color-bright-aqua;
+      padding: 10px;
+    }
+
+    &__title {
+      padding: 10px 20px 20px 20px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &__zigzag {
+      @include standard-page__zigzag();
+    }
+  }
+
+  &__article-excerpt {
+    margin-top: 20px;
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 30px;
+  }
 }

@@ -4,6 +4,8 @@
   "version": "1.0.0",
   "author": "<jytiens@mtlgreen.com>",
   "dependencies": {
+    "@mdi/js": "^2.7.94",
+    "@mdi/react": "^1.0.0",
     "gatsby": "^1.9.247",
     "gatsby-image": "^1.0.54",
     "gatsby-link": "^1.6.45",

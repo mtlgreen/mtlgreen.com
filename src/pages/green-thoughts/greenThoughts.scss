@@ -5,11 +5,7 @@
   @include standard-page__body__container();
 }
 
-.green-thoughts-page__intro-informtaion__outer-container {
-  padding: 0px 20px 0px 20px;
-}
-
-.green-thoughts-page__intro-informtaion__inner-container {
+.green-thoughts-page__intro-informtaion__container {
   @include standard-page__intro-information__container();
 }
 
