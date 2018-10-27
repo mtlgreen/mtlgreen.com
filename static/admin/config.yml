@@ -7,13 +7,13 @@ backend:
 publish_mode: editorial_workflow
 
 # These lines should *not* be indented
-media_folder: 'static/images/uploads'
-# public_folder: "/images/uploads"
+media_folder: static/images
+public_folder: /images
 
 collections:
   - name: 'events' # Used in routes, e.g., /admin/collections/blog
     label: 'Events' # Used in the UI
-    folder: 'pages/events' # The path to the folder where the documents are stored
+    folder: 'src/pages/events' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -33,7 +33,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'green-thoughts'
     label: 'Green Thoughts Articles'
-    folder: 'pages/green-thoughts'
+    folder: 'src/pages/green-thoughts'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
       - { label: 'Title', name: 'title', widget: 'string' }
