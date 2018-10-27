@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  repo: mtlgreen/mtlgreen.com
+  branch: master # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+publish_mode: editorial_workflow
+
+# These lines should *not* be indented
+media_folder: 'static/images/uploads'
+# public_folder: "/images/uploads"
+
+collections:
+  - name: 'events' # Used in routes, e.g., /admin/collections/blog
+    label: 'Events' # Used in the UI
+    folder: 'pages/events' # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Start Time', name: 'startTime', widget: 'datetime' }
+      - { label: 'End Time', name: 'endTime', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - {
+          label: 'Street Address and Number',
+          name: 'addressDetailLevel',
+          widget: 'string',
+        }
+      - { label: 'City', name: 'addressCityLevel', widget: 'string' }
+      - { label: 'Postal Code', name: 'addressPostalCode', widget: 'string' }
+      - { label: 'Ticket Price', name: 'price', widget: 'number' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'green-thoughts'
+    label: 'Green Thoughts Articles'
+    folder: 'pages/green-thoughts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+      - { label: 'Short Description', name: 'shortDescription', widget: 'string'}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
