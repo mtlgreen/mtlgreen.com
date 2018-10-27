@@ -31,14 +31,14 @@ collections:
       - { label: 'Postal Code', name: 'addressPostalCode', widget: 'string' }
       - { label: 'Ticket Price', name: 'price', widget: 'number' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'green-thoughts'
-    label: 'Green Thoughts Articles'
-    folder: 'src/pages/green-thoughts'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
-      - { label: 'Short Description', name: 'shortDescription', widget: 'string'}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'green-thoughts'
+  #   label: 'Green Thoughts Articles'
+  #   folder: 'src/pages/green-thoughts'
+  #   create: true
+  # slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  # - { label: 'Title', name: 'title', widget: 'string' }
+  # - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+  # - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
+  # - { label: 'Short Description', name: 'shortDescription', widget: 'string'}
+  # - { label: 'Body', name: 'body', widget: 'markdown' }
 
