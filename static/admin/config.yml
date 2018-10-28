@@ -28,15 +28,17 @@ collections:
           widget: 'list',
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
-      - { label: 'Address', name: 'address', widget: 'object', fields:
-          - {
+      - label: 'Address'
+        name: 'address'
+        widget: 'object'
+        fields:
+            - {
               label: 'Street and Number',
               name: 'addressDetailLevel',
               widget: 'string',
             }
-          - { label: 'City', name: 'addressCityLevel', widget: 'string' }
-          - { label: 'Postal Code', name: 'addressPostalCode', widget: 'string' }
-        }
+            - { label: 'City', name: 'addressCityLevel', widget: 'string' }
+            - { label: 'Postal Code', name: 'addressPostalCode', widget: 'string' }
       - { label: 'Ticket Price', name: 'price', widget: 'number' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'green-thoughts' # Used in routes, e.g., /admin/collections/blog
