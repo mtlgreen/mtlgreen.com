@@ -26,7 +26,7 @@ collections:
           label: 'Additional Images',
           name: 'images',
           widget: 'list',
-          field: { label: 'Image', name: 'image', widget: 'image' },
+          field: { label: 'Image', name: 'image', widget: 'image' }
         }
       - { label: 'Address', name: 'address', widget: 'object', fields:
           - {
