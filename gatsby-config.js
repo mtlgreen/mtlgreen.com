@@ -21,6 +21,20 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/images`,
+        name: 'static-images',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/images`,
+        name: 'images',
+      },
+    },
 
     //STYLING
     {
@@ -41,6 +55,9 @@ module.exports = {
         plugins: [
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
+          {
+            resolve: `gatsby-remark-relative-images`,
+          },
           {
             resolve: `gatsby-remark-images`,
             options: {
