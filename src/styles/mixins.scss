@@ -54,14 +54,17 @@
   }
 }
 
-@mixin standard-page__section-title {
+@mixin standard-page__section-title(
+  $fontSize: 35px,
+  $fontColor: $color-rosy-red
+) {
   width: 100%;
   height: 50px;
   padding: 50px 30px 50px 0px;
-  font-size: 35px;
-  color: $color-rosy-red;
+  font-size: $fontSize;
+  color: $fontColor;
   @media (max-width: $bp-large) {
-    font-size: 25px;
+    font-size: $fontSize;
     padding: 10px;
   }
 }
