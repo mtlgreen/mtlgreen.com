@@ -9,9 +9,10 @@ class AboutPage extends Component {
     return (
       <div className="about-page__body__container">
         <CommonPageHeadTitle titleText={'What are we all about?'} />
-        {/* MISSION VISION Background */}
+        {/* Header */}
         <section className="about-page__section about-page__section-parallax about-page__mission-vision__background" />
         {/* MISSION VISION Text */}
+        <a id="mission" />
         <section className="about-page__section about-page__section-static">
           <div className="about-page__mission-vision__container">
             <div className="about-page__mission-vision__title">
@@ -22,34 +23,7 @@ class AboutPage extends Component {
             </div>
           </div>
         </section>
-        {/* MAIN ACTIVITIES Background */}
-        <section className="about-page__section about-page__section-parallax about-page__main-activities__background">
-          <div className="about-page__quote__container">
-            <div>
-              <span className="about-page__quote__quotation-mark">
-                " &nbsp;
-              </span>
-              Sustainability is no longer about doing less harm. It's about
-              doing more good.
-              <span className="about-page__quote__quotation-mark">
-                &nbsp; "
-              </span>
-            </div>
-            <div className="about-page__quote__author">- Jochen Zeitz</div>
-          </div>
-        </section>
-        {/* MAIN ACTIVITIES Text */}
-        <section className="about-page__section about-page__section-static">
-          <div className="about-page__main-activities__container">
-            <div className="about-page__main-activities__title">
-              Main Activities
-            </div>
-            <div className="about-page__main-activities__text">
-              {aboutContent.mainActivitiesText}
-            </div>
-          </div>
-        </section>
-        {/* OBJECTIVES Background */}
+        {/* Quote */}
         <section className="about-page__section about-page__section-parallax about-page__history__background">
           <div className="about-page__quote__container">
             <div>
@@ -65,6 +39,7 @@ class AboutPage extends Component {
           </div>
         </section>
         {/* HISTORY Text */}
+        <a id="history" />
         <section className="about-page__section about-page__section-static">
           <div className="about-page__history__container">
             <div className="about-page__history__title">History</div>
@@ -73,7 +48,7 @@ class AboutPage extends Component {
             </div>
           </div>
         </section>
-        {/* TEAM Background */}
+        {/* Quote */}
         <section className="about-page__section about-page__section-parallax about-page__team__background">
           <div className="about-page__quote__container">
             <div>
@@ -90,11 +65,38 @@ class AboutPage extends Component {
           </div>
         </section>
         {/* TEAM Text */}
+        <a id="team" />
         <section className="about-page__section about-page__section-static">
           <div className="about-page__team__container">
             <div className="about-page__team__title">Team</div>
             <div className="about-page__team__text">
               {aboutContent.teamText}
+            </div>
+          </div>
+        </section>
+        {/* Quote*/}
+        <section className="about-page__section about-page__section-parallax about-page__partners__background">
+          <div className="about-page__quote__container">
+            <div>
+              <span className="about-page__quote__quotation-mark">
+                " &nbsp;
+              </span>
+              Sustainability is no longer about doing less harm. It's about
+              doing more good.
+              <span className="about-page__quote__quotation-mark">
+                &nbsp; "
+              </span>
+            </div>
+            <div className="about-page__quote__author">- Jochen Zeitz</div>
+          </div>
+        </section>
+        {/* PARTNERS Text */}
+        <a id="partners" />
+        <section className="about-page__section about-page__section-static">
+          <div className="about-page__partners__container">
+            <div className="about-page__partners__title">Partners</div>
+            <div className="about-page__partners__text">
+              {aboutContent.mainActivitiesText}
             </div>
           </div>
         </section>
