@@ -19,6 +19,11 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'date' }
       - { label: 'Start Time', name: 'startTime', widget: 'datetime' }
       - { label: 'End Time', name: 'endTime', widget: 'datetime' }
+      - {
+          label: 'Short Description',
+          name: 'shortDescription',
+          widget: 'string',
+        }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       - {
           label: 'Additional Images',
