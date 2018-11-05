@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import SiteMetaInformation from './SiteMetaInformation'
-
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
+
 import './mainLayout.scss'
 import '../styles/variables.scss'
 
@@ -23,6 +24,7 @@ class MainLayout extends Component {
           iconCross={this.props.data.iconCross.childImageSharp.sizes}
         />
         <div className="main-layout__container">{this.props.children()}</div>
+        <Footer />
       </div>
     )
   }

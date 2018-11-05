@@ -1,26 +1,29 @@
 backend:
   name: git-gateway
   repo: mtlgreen/mtlgreen.com
-  branch: master # Branch to update (optional; defaults to master)
+  branch: master 
 
-# This line should *not* be indented
 publish_mode: editorial_workflow
 
-# These lines should *not* be indented
 media_folder: static/images
 public_folder: /images
 
 collections:
-  - name: 'events' # Used in routes, e.g., /admin/collections/blog
-    label: 'Events' # Used in the UI
-    folder: 'src/pages/events' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: 'events'
+    label: 'Events' 
+    folder: 'src/pages/events' 
+    create: true 
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' 
+    fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'date' }
       - { label: 'Start Time', name: 'startTime', widget: 'datetime' }
       - { label: 'End Time', name: 'endTime', widget: 'datetime' }
+      - {
+          label: 'Short Description',
+          name: 'shortDescription',
+          widget: 'string',
+        }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }
       - {
           label: 'Additional Images',
@@ -40,13 +43,15 @@ collections:
             - { label: 'City', name: 'addressCityLevel', widget: 'string' }
             - { label: 'Postal Code', name: 'addressPostalCode', widget: 'string' }
       - { label: 'Ticket Price', name: 'price', widget: 'number' }
+      - { label: 'Eventbrite Link', name: 'linkEventbrite', widget: 'string' }
+      - { label: 'Facebook Link', name: 'linkFacebook', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'green-thoughts' # Used in routes, e.g., /admin/collections/blog
-    label: 'Green Thoughts Articles' # Used in the UI
-    folder: 'src/pages/green-thoughts' # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: 'green-thoughts'
+    label: 'Green Thoughts Articles' 
+    folder: 'src/pages/green-thoughts' 
+    create: true 
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' 
+    fields: 
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'date' }
       - { label: 'Featured Image', name: 'thumbnail', widget: 'image' }

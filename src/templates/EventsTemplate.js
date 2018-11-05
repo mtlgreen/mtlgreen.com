@@ -6,6 +6,7 @@ import getFormattedDate from '../utils/getFormattedDate'
 import Icon from '@mdi/react'
 import { mdiCalendar, mdiCity, mdiEventbrite, mdiFacebookBox } from '@mdi/js'
 import ImageCardGrid from '../components/ImageCardGrid/ImageCardGrid'
+import Footer from '../components/Footer/Footer'
 
 import './eventsTemplate.scss'
 
@@ -45,7 +46,7 @@ class EventsTemplate extends Component {
             width: '100vw',
             maxWidth: '700px',
             height: '70vh',
-            marginTop: '-15vh',
+            marginTop: '80px',
           }}
           sizes={{
             ...post.frontmatter.thumbnail.childImageSharp.sizes,
@@ -97,11 +98,11 @@ class EventsTemplate extends Component {
               </div>
               <div className="events-template__body__info-text">
                 <div className="events-template__body__address-details">
-                  {post.frontmatter.addressDetailLevel}
+                  {post.frontmatter.address.addressDetailLevel}
                 </div>
                 <div className="events-template__body__address">
-                  {post.frontmatter.addressCityLevel}{' '}
-                  {post.frontmatter.addressPostalCode}
+                  {post.frontmatter.address.addressCityLevel}{' '}
+                  {post.frontmatter.address.addressPostalCode}
                 </div>
               </div>
             </div>
@@ -179,14 +180,15 @@ export const eventsTemplateQuery = graphql`
         date
         startTime
         endTime
-        addressDetailLevel
-        addressCityLevel
-        addressPostalCode
+        address {
+          addressDetailLevel
+          addressCityLevel
+          addressPostalCode
+        }
         shortDescription
         price
         linkEventbrite
         linkFacebook
-
         images {
           childImageSharp {
             sizes(maxWidth: 1000) {

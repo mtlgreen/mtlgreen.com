@@ -16,6 +16,7 @@ class GreenThoughtsTemplate extends Component {
           style={{
             width: '100vw',
             height: '65vh',
+            marginTop: '80px',
           }}
           sizes={{
             ...post.frontmatter.thumbnail.childImageSharp.sizes,
