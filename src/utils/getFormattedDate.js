@@ -3,7 +3,7 @@ const getFormattedDate = date => {
   let year =
     new Date(date).getFullYear() < 2018
       ? new Date(date).toLocaleString('en-US', { year: 'numeric' })
-      : null
+      : ''
   let month = new Date(date).toLocaleString('en-US', { month: 'short' })
   let monthLong = new Date(date).toLocaleString('en-US', { month: 'long' })
   let day = new Date(date).toLocaleString('en-US', {

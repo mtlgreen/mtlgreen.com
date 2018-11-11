@@ -36,8 +36,8 @@ class EventsTemplate extends Component {
 
   render() {
     const post = this.props.data.markdownRemark
-
     const projectImages = this.props.data.markdownRemark.frontmatter.images
+    const date = this.state.formattedDate
 
     return (
       <div className="events-template__container">
@@ -63,19 +63,14 @@ class EventsTemplate extends Component {
               </div>
               <div className="events-template__body__info-text">
                 <div className="events-template__body__date">
-                  {this.state.formattedDate
-                    ? this.state.formattedDate.weekDay
-                    : null}{' '}
-                  {this.state.formattedDate
-                    ? this.state.formattedDate.day
-                    : null}
-                  {', '}
-                  {this.state.formattedDate
-                    ? this.state.formattedDate.monthLong
-                    : null}{' '}
-                  {this.state.formattedDate
-                    ? this.state.formattedDate.year
-                    : null}
+                  {date &&
+                    date.weekDay +
+                      ' ' +
+                      date.day +
+                      ' ' +
+                      date.monthLong +
+                      ' ' +
+                      date.year}
                 </div>
                 <div className="events-template__body__time">
                   {this.state.formattedStartTime

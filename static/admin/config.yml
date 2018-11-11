@@ -62,6 +62,7 @@ collections:
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
       - { label: 'Author Name', name: 'authorName', widget: 'string' }
+      - { label: 'Author Image', name: 'authorImage', widget: 'image' }
       - {
           label: 'Short Description',
           name: 'shortDescription',
