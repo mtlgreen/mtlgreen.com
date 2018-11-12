@@ -56,7 +56,7 @@ class GreenThoughtsTemplate extends Component {
                 borderRadius: '100%',
               }}
               sizes={{
-                ...post.frontmatter.thumbnail.childImageSharp.sizes,
+                ...post.frontmatter.authorImage.childImageSharp.sizes,
                 aspectRatio: 1 / 1,
               }}
             />
