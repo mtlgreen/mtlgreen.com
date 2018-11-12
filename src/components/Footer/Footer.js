@@ -85,7 +85,7 @@ class Footer extends Component {
             <div className="footer__information-segment__container">
               <div className="footer__information-segment__title">Location</div>
               <div className="footer__information-segment__body">
-                <div>
+                <div style={{ marginBottom: '10px' }}>
                   Modays from 18h - 20h at Evolving Web: <br />
                   300 Rue du Saint-Sacrement #222, Montréal, QC H2Y 1X4
                 </div>
