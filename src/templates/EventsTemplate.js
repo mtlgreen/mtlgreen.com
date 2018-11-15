@@ -36,7 +36,7 @@ class EventsTemplate extends Component {
 
   render() {
     const post = this.props.data.markdownRemark
-    const projectImages = this.props.data.markdownRemark.frontmatter.images
+    const projectImages = post.frontmatter.eventImages
     const date = this.state.formattedDate
 
     return (
@@ -155,10 +155,7 @@ class EventsTemplate extends Component {
 
         {/* ------------------------- Image Grid -------------------------- */}
 
-        <ImageCardGrid
-          onlyShowImage={true}
-          dataArray={post.frontmatter.images}
-        />
+        <ImageCardGrid onlyShowImage={true} dataArray={projectImages} />
       </div>
     )
   }
@@ -184,7 +181,7 @@ export const eventsTemplateQuery = graphql`
         price
         linkEventbrite
         linkFacebook
-        images {
+        eventImages {
           childImageSharp {
             sizes(maxWidth: 1000) {
               ...GatsbyImageSharpSizes

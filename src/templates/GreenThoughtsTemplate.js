@@ -24,7 +24,7 @@ class GreenThoughtsTemplate extends Component {
 
   render() {
     const post = this.props.data.markdownRemark
-    const projectImages = this.props.data.markdownRemark.frontmatter.images
+    const projectImages = this.props.data.markdownRemark.frontmatter.extraImages
     const date = this.state.formattedDate
 
     return (
@@ -104,13 +104,13 @@ export const greenThoughtsTemplateQuery = graphql`
         }
         authorName
         date
-        # images {
-        #   childImageSharp {
-        #     sizes(maxWidth: 1000) {
-        #       ...GatsbyImageSharpSizes
-        #     }
-        #   }
-        # }
+        extraImages {
+          childImageSharp {
+            sizes(maxWidth: 1000) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
         thumbnail {
           childImageSharp {
             sizes(maxWidth: 1200) {
