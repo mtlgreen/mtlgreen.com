@@ -5,8 +5,9 @@ startTime: 2018-11-01T03:20:07.298Z
 endTime: 2018-11-01T03:20:07.300Z
 shortDescription: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim non enim ut euismod. Vestibulum in ultrices elit, non ornare lorem. Praesent accumsan et lectus vel mollis.
 thumbnail: /images/reeds.jpg
-images:
-  - /images/sailboar.jpg
+eventImages:
+  - /images/forestfloor.jpg
+  - /images/reeds.jpg
 address:
   addressCityLevel: Montreal
   addressDetailLevel: 888 des Pins
