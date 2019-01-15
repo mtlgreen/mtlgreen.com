@@ -15,6 +15,16 @@ address:
 linkEventbrite: 'http://www.eventrbite.com'
 linkFacebook: 'http://www.facebook.com'
 price: '10'
+partners:
+  - name: 'John Doe'
+    image: /images/forestfloor.jpg
+  - name: 'Mary Doe'
+    image: /images/reeds.jpg
+sponsors:
+  - name: 'John Doe'
+    image: /images/forestfloor.jpg
+  - name: 'Mary Doe'
+    image: /images/reeds.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim non enim ut euismod. Vestibulum in ultrices elit, non ornare lorem. Praesent accumsan et lectus vel mollis.
