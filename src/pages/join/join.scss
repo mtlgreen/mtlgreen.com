@@ -1,6 +1,52 @@
 @import '../../styles/variables.scss';
 @import '../../styles/mixins.scss';
 
-.join-page__body__container {
-  @include standard-page__body__container();
+.join-page {
+  &__body__container {
+    @include standard-page__body__container();
+    align-items: flex-start;
+  }
+
+  &__join-point__container {
+    padding: 0px 40px 0px 20px;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  &__join-point__title {
+    span {
+      color: $color-bright-aqua;
+      font-size: 26px;
+      font-weight: bolder;
+    }
+  }
+  &__join-point__sub-title {
+    font-size: 16px;
+  }
+  &__join-point__sub-title__link {
+    color: $color-rosy-red;
+    font-size: 20px;
+  }
+
+  &__join-point__body {
+    display: flex;
+    @media (max-width: $bp-medium) {
+      display: block;
+    }
+    flex-direction: row;
+  }
+  &__join-point__body-left {
+    flex: 1;
+    ul {
+      font-size: 16px;
+      list-style-type: disc;
+    }
+  }
+  &__join-point__body-right {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: $color-bright-aqua;
+    padding: 20px;
+  }
 }
