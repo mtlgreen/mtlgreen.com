@@ -151,6 +151,9 @@ class EventsTemplate extends Component {
               __html: post.html,
             }}
           />
+          <div>
+            <h1>{post.frontmatter.partners.map(partner => partner.name)}</h1>
+          </div>
         </div>
 
         {/* ------------------------- Image Grid -------------------------- */}
@@ -179,6 +182,16 @@ export const eventsTemplateQuery = graphql`
         }
         shortDescription
         price
+        partners {
+          name
+          image {
+            childImageSharp {
+              sizes(maxWidth: 400) {
+                ...GatsbyImageSharpSizes
+              }
+            }
+          }
+        }
         linkEventbrite
         linkFacebook
         eventImages {
