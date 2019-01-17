@@ -230,13 +230,15 @@ class HomePage extends Component {
             <div className="home-page__purpose-intro__body__text">
               <ul>
                 <li>
-                  <span>Feel</span> impact by <a href="#">participating</a> in
-                  one of our events.
+                  <span>Feel</span> impact by{' '}
+                  <a href="/join/#join-participate">participating</a> in one of
+                  our events.
                 </li>
                 <hr />
                 <li>
-                  <span>Create</span> impact by <a href="#">joining</a> our team
-                  to form, shape, and lead sustainability focused events.
+                  <span>Create</span> impact by{' '}
+                  <a href="/join/#join-team">joining</a> our team to form,
+                  shape, and lead sustainability focused events.
                 </li>
                 <hr />
                 <li>

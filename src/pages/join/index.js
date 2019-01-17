@@ -11,6 +11,7 @@ class JoinPage extends Component {
         <CommonPageHeadTitle titleText={'Join the Impact!'} />
         <div className="join-page__body__container">
           <div className="join-page__join-point__container">
+            <a id="join-participate" />
             <div className="join-page__join-point__title">
               <h3>
                 <span>Participate</span> in one of our events
@@ -49,6 +50,7 @@ class JoinPage extends Component {
                 </div>
               </div>
             </div>
+            <a id="join-team" />
             <div className="join-page__join-point__title">
               <h3>
                 <span>Join</span> our team to form, shape, and lead
@@ -89,6 +91,7 @@ class JoinPage extends Component {
               </div>
             </div>
             <div className="join-page__join-point__title">
+              <a id="join-partner" />
               <h3>
                 <span>Partner</span> with us over bold ideas
               </h3>
@@ -126,6 +129,7 @@ class JoinPage extends Component {
               </div>
             </div>
             <div className="join-page__join-point__title">
+              <a id="join-sponsor" />
               <h3>
                 <span>Fund</span> a meaningful sustainable movement.
               </h3>
