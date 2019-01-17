@@ -12,7 +12,19 @@ address:
   addressCityLevel: Montreal
   addressDetailLevel: 888 des Pins
   addressPostalCode: H2T4R3
+linkEventbrite: 'http://www.eventrbite.com'
+linkFacebook: 'http://www.facebook.com'
 price: '12'
+partners:
+  - name: 'John Doe'
+    image: /images/forestfloor.jpg
+  - name: 'Mary Doe'
+    image: /images/reeds.jpg
+sponsors:
+  - name: 'John Doe'
+    image: /images/forestfloor.jpg
+  - name: 'Mary Doe'
+    image: /images/reeds.jpg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim non enim ut euismod. Vestibulum in ultrices elit, non ornare lorem. Praesent accumsan et lectus vel mollis. Aliquam erat volutpat. Etiam blandit at tortor id sodales. Vivamus sit amet nisi vulputate ligula auctor pharetra eget vel purus. Praesent ac turpis ac lectus mattis blandit. Donec in venenatis tortor. Etiam luctus eleifend justo, a egestas odio hendrerit nec. Sed vitae laoreet ante. Nulla congue turpis ac imperdiet finibus. Praesent gravida erat eu lorem sodales, sed vehicula justo lobortis. Ut nibh velit, finibus eu nibh ut, molestie hendrerit est. Cras egestas ultrices enim, eu vehicula nulla efficitur tristique. Aliquam a dignissim lacus, et molestie odio. Curabitur ut ipsum enim.

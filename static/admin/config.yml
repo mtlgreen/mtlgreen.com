@@ -50,6 +50,7 @@ collections:
         name: 'partners'
         widget: list
         fields: 
+
           - { label: 'Name', name: 'name', widget: 'string', default: ''}
           - { label: 'Image', name: 'image', widget: 'image', default: /images/reeds.jpg}
       - label: 'Sponsors'
