@@ -24,7 +24,8 @@ class GreenThoughtsTemplate extends Component {
 
   render() {
     const post = this.props.data.markdownRemark
-    const projectImages = this.props.data.markdownRemark.frontmatter.extraImages
+    const projectImages =
+      this.props.data.markdownRemark.frontmatter.extraImages || []
     const date = this.state.formattedDate
 
     return (
