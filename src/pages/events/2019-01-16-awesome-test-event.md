@@ -19,12 +19,11 @@ price: '12'
 linkEventbrite: 'http://www.eventbrite.com'
 linkFacebook: 'http://www.facebook.com'
 partners:
-  - image: /images/reeds.jpg
-    name: ''
-  - name: Cool company
+  - image: /images/julioradisca-plant-desk.jpg
+    name: Cool company
 sponsors:
   - image: /images/reeds.jpg
-    name: ''
+    name: cooler company
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget maximus nisi. Praesent commodo vulputate nisl, sed bibendum mauris congue et. Proin vitae elit tincidunt, pellentesque risus nec, consectetur quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc lacinia porttitor risus id venenatis. Curabitur ut justo blandit, gravida metus vel, condimentum felis. Fusce sit amet laoreet mauris. Integer vel nisi ut neque condimentum venenatis. Aenean porta mauris eu odio lacinia rhoncus. Suspendisse rhoncus et justo vestibulum semper.
 
