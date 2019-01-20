@@ -19,10 +19,10 @@ linkEventbrite: 'http://www.eventbrite.com'
 linkFacebook: 'http://www.facebook.com'
 partners:
   - image: /images/reeds.jpg
-    name: ''
+    name: Best Partner
 sponsors:
   - image: /images/reeds.jpg
-    name: ''
+    name: Best Sponsor
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra feugiat velit sed vehicula. Nullam lacinia ultricies ex sed facilisis. Ut facilisis volutpat orci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra feugiat velit sed vehicula. Nullam lacinia ultricies ex sed facilisis. Ut facilisis volutpat orci. Donec commodo erat id elementum viverra. Nulla sed ante nec felis tristique efficitur nec id est. Sed dignissim mi ac elit tempor pellentesque. Phasellus sit amet scelerisque ligula, vel viverra augue. Donec sapien magna, iaculis ac lacus id, elementum auctor odio. Ut eu porttitor sem. Cras sed dignissim diam, non rhoncus orci.
 
