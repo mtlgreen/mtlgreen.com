@@ -36,7 +36,7 @@ class EventsTemplate extends Component {
 
   render() {
     const post = this.props.data.markdownRemark
-    const projectImages = post.frontmatter.eventImages
+    const projectImages = post.frontmatter.eventImages || []
     const date = this.state.formattedDate
 
     return (
