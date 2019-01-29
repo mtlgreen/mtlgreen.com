@@ -182,16 +182,16 @@ export const eventsTemplateQuery = graphql`
         }
         shortDescription
         price
-        partners {
-          name
-          image {
-            childImageSharp {
-              sizes(maxWidth: 400) {
-                ...GatsbyImageSharpSizes
-              }
-            }
-          }
-        }
+        # partners {
+        #   name
+        #   image {
+        #     childImageSharp {
+        #       sizes(maxWidth: 400) {
+        #         ...GatsbyImageSharpSizes
+        #       }
+        #     }
+        #   }
+        # }
         linkEventbrite
         linkFacebook
         eventImages {
