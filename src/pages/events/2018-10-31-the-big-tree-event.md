@@ -41,7 +41,7 @@ Praesent dignissim augue non euismod condimentum. In lobortis, leo venenatis tem
 
 Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras a lectus pharetra, feugiat ex ac, vehicula neque. Nam a ligula augue. Vivamus pulvinar libero sed tristique pretium. Pellentesque dapibus velit libero, eget pretium metus rhoncus ut. Ut ipsum ligula, tempor non cursus non, dictum nec ex. Proin consectetur ut purus eu rhoncus.
 
-<bockquote><h3>
+<blockquote><h3>
 Etiam luctus eleifend justo, a egestas odio hendrerit nec. Sed vitae laoreet ante. Nulla congue turpis ac imperdiet finibus. Praesent gravida erat eu lorem sodales, sed vehicula justo lobortis.
 
 </blockquote></h3>
