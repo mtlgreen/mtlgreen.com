@@ -151,9 +151,9 @@ class EventsTemplate extends Component {
               __html: post.html,
             }}
           />
-          <div>
+          {/* <div>
             <h1>{post.frontmatter.partners.map(partner => partner.name)}</h1>
-          </div>
+          </div> */}
         </div>
 
         {/* ------------------------- Image Grid -------------------------- */}

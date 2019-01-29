@@ -46,19 +46,19 @@ collections:
       - { label: 'Eventbrite Link', name: 'linkEventbrite', widget: 'string' }
       - { label: 'Facebook Link', name: 'linkFacebook', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: 'Partners'
-        name: 'partners'
-        widget: list
-        fields: 
+      # - label: 'Partners'
+      #   name: 'partners'
+      #   widget: list
+      #   fields: 
 
-          - { label: 'Name', name: 'name', widget: 'string', default: ''}
-          - { label: 'Image', name: 'image', widget: 'image', default: /images/reeds.jpg}
-      - label: 'Sponsors'
-        name: 'sponsors'
-        widget: list
-        fields: 
-          - { label: 'Name', name: 'name', widget: 'string', default: ''}
-          - { label: 'Image', name: 'image', widget: 'image', default: /images/reeds.jpg}
+      #     - { label: 'Name', name: 'name', widget: 'string', default: ''}
+      #     - { label: 'Image', name: 'image', widget: 'image', default: /images/reeds.jpg}
+      # - label: 'Sponsors'
+      #   name: 'sponsors'
+      #   widget: list
+      #   fields: 
+      #     - { label: 'Name', name: 'name', widget: 'string', default: ''}
+      #     - { label: 'Image', name: 'image', widget: 'image', default: /images/reeds.jpg}
   - name: 'green-thoughts'
     label: 'Green Thoughts Articles' 
     folder: 'src/pages/green-thoughts' 
